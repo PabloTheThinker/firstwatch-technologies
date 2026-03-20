@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 const divisions = [
   {
@@ -8,6 +9,7 @@ const divisions = [
     subtitle: 'Intelligence',
     number: '01',
     icon: '🧠',
+    href: '/ai',
     description:
       'Cognitive architectures, agent frameworks, and intelligence platforms. Building infrastructure for autonomous agents that reason, collaborate, and adapt.',
     tags: ['Cognitive Architecture', 'Agent Frameworks', 'Intelligence Platforms'],
@@ -20,6 +22,7 @@ const divisions = [
     subtitle: 'Platforms',
     number: '02',
     icon: '💻',
+    href: '/software',
     description:
       'Products and platforms that bring clarity to complex decisions. AI-powered tools, marketplaces, and systems designed for how people actually work.',
     tags: ['SaaS', 'Marketplaces', 'Developer Tools', 'AI-Powered'],
@@ -32,6 +35,7 @@ const divisions = [
     subtitle: 'Autonomous Systems',
     number: '03',
     icon: '🤖',
+    href: '/robotics',
     description:
       'Autonomous systems for extreme environments. Extending human reach into spaces too dangerous, inaccessible, or distant for direct intervention — from disaster zones to orbit.',
     tags: ['Autonomous Systems', 'Disaster Response', 'Space Exploration'],
@@ -44,6 +48,7 @@ const divisions = [
     subtitle: 'Infrastructure',
     number: '04',
     icon: '📡',
+    href: '/communications',
     description:
       'Resilient communication systems that work when everything else fails. Connecting agents, machines, and people across any terrain, any condition.',
     tags: ['Mesh Networks', 'Resilient Signal', 'Field Communications'],
@@ -86,8 +91,9 @@ export default function Divisions() {
         {/* Division cards */}
         <div className="grid md:grid-cols-2 gap-4">
           {divisions.map((div, i) => (
-            <div
+            <Link
               key={div.number}
+              href={div.href}
               className={`group relative overflow-hidden rounded-xl border border-white/[0.06] bg-[#111118]/80 backdrop-blur-sm hover:border-blue-500/25 transition-all duration-500 ease-out ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
@@ -113,15 +119,20 @@ export default function Divisions() {
                 <p className="text-gray-400 text-sm leading-relaxed mb-5">
                   {div.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {div.tags.map((tag) => (
-                    <span key={tag} className="font-mono text-[10px] px-2.5 py-1 rounded-md bg-white/[0.03] border border-white/[0.05] text-gray-500">
-                      {tag}
-                    </span>
-                  ))}
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2">
+                    {div.tags.map((tag) => (
+                      <span key={tag} className="font-mono text-[10px] px-2.5 py-1 rounded-md bg-white/[0.03] border border-white/[0.05] text-gray-500">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <svg className="w-4 h-4 text-gray-700 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all duration-200 shrink-0 ml-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

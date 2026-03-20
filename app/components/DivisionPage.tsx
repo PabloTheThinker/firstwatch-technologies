@@ -161,7 +161,7 @@ export default function DivisionPage({
             </span>
           </h1>
 
-          <p className={`mt-8 text-lg text-[#8888aa] leading-relaxed max-w-2xl transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+          <p className={`mt-6 md:mt-8 text-base md:text-lg text-[#8888aa] leading-relaxed max-w-2xl transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             {description}
           </p>
 
@@ -177,11 +177,11 @@ export default function DivisionPage({
       </section>
 
       {/* Body */}
-      <section className="py-32 px-6">
+      <section className="py-20 md:py-32 px-6">
         <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#2563eb]/15 to-transparent" />
-        <div className="mx-auto max-w-2xl space-y-8">
+        <div className="prose-body mx-auto max-w-2xl">
           {paragraphs.map((p, i) => (
-            <p key={i} className="text-[#8888aa] text-lg leading-relaxed">
+            <p key={i} className="text-[#8888aa] text-base md:text-lg leading-relaxed">
               {p}
             </p>
           ))}
@@ -190,7 +190,7 @@ export default function DivisionPage({
 
       {/* Products */}
       {products && products.length > 0 && (
-        <section className="py-32 px-6">
+        <section className="py-20 md:py-32 px-6">
           <div className="mx-auto max-w-[1200px]">
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#2563eb] mb-16">Products</p>
             <div className="grid md:grid-cols-2 gap-4">
@@ -229,7 +229,7 @@ export default function DivisionPage({
       )}
 
       {/* Capabilities */}
-      <section ref={capRef} className="py-32 px-6">
+      <section ref={capRef} className="py-20 md:py-32 px-6">
         <div className="mx-auto max-w-[1200px]">
           <div className={`mb-16 transition-all duration-1000 ${capVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#2563eb] mb-4">Capabilities</p>
@@ -258,7 +258,7 @@ export default function DivisionPage({
       </section>
 
       {/* Back */}
-      <section className="pb-20 px-6">
+      <section className="pb-16 md:pb-20 px-6">
         <div className="mx-auto max-w-[1200px]">
           <Link
             href="/"

@@ -23,7 +23,7 @@ export default function Mission() {
       <div className="max-w-4xl w-full">
         {/* Mission statement card */}
         <div
-          className={`relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111118]/60 backdrop-blur-sm p-10 md:p-16 transition-all duration-1000 ${
+          className={`relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111118]/60 backdrop-blur-sm p-8 md:p-16 transition-all duration-1000 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
@@ -41,7 +41,7 @@ export default function Mission() {
             Mission
           </p>
           <h2
-            className={`text-3xl sm:text-4xl md:text-5xl font-extralight tracking-tight text-white/90 leading-[1.15] mb-8 transition-all duration-1000 delay-100 ${
+            className={`text-2xl sm:text-3xl md:text-5xl font-extralight tracking-tight text-white/90 leading-[1.15] mb-6 md:mb-8 transition-all duration-1000 delay-100 ${
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
@@ -49,7 +49,7 @@ export default function Mission() {
             <span className="gradient-text font-medium">Secure a path.</span>
           </h2>
           <p
-            className={`text-[#8888aa] text-lg leading-relaxed max-w-2xl transition-all duration-1000 delay-300 ${
+            className={`text-[#8888aa] text-base md:text-lg leading-relaxed max-w-2xl transition-all duration-1000 delay-300 ${
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >

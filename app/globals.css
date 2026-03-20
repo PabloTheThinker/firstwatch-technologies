@@ -58,7 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-p { margin: 0; line-height: 1.7; }
+p { margin: 0; line-height: 1.75; }
+
+/* Paragraph spacing within prose containers */
+.prose-body p + p { margin-top: 1.75rem; }
 a { color: inherit; text-decoration: none; }
 
 /* Gradient text */

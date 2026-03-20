@@ -27,38 +27,38 @@ interface DivisionPageProps {
   paragraphs: string[];
   capabilities: Capability[];
   tags: string[];
-  accentColor: 'purple' | 'blue' | 'orange' | 'green';
+  accentColor: 'red' | 'green' | 'blue' | 'yellow';
   products?: DivisionProduct[];
 }
 
 const colorConfig = {
-  purple: {
-    gradient: 'radial-gradient(circle, rgba(147,51,234,0.07) 0%, rgba(147,51,234,0.02) 40%, transparent 65%)',
-    accent: 'text-purple-400',
-    border: 'border-purple-500/20',
-    bg: 'bg-purple-500/5',
-    glow: 'hover:border-purple-500/25',
-  },
-  blue: {
-    gradient: 'radial-gradient(circle, rgba(37,99,235,0.08) 0%, rgba(37,99,235,0.02) 40%, transparent 65%)',
-    accent: 'text-blue-400',
-    border: 'border-blue-500/20',
-    bg: 'bg-blue-500/5',
-    glow: 'hover:border-blue-500/25',
-  },
-  orange: {
-    gradient: 'radial-gradient(circle, rgba(249,115,22,0.07) 0%, rgba(249,115,22,0.02) 40%, transparent 65%)',
-    accent: 'text-orange-400',
-    border: 'border-orange-500/20',
-    bg: 'bg-orange-500/5',
-    glow: 'hover:border-orange-500/25',
+  red: {
+    gradient: 'radial-gradient(circle, rgba(185,28,28,0.07) 0%, rgba(185,28,28,0.02) 40%, transparent 65%)',
+    accent: 'text-red-400',
+    border: 'border-red-700/20',
+    bg: 'bg-red-900/10',
+    glow: 'hover:border-red-700/25',
   },
   green: {
-    gradient: 'radial-gradient(circle, rgba(34,197,94,0.07) 0%, rgba(34,197,94,0.02) 40%, transparent 65%)',
+    gradient: 'radial-gradient(circle, rgba(22,101,52,0.08) 0%, rgba(22,101,52,0.02) 40%, transparent 65%)',
     accent: 'text-green-400',
-    border: 'border-green-500/20',
-    bg: 'bg-green-500/5',
-    glow: 'hover:border-green-500/25',
+    border: 'border-green-700/20',
+    bg: 'bg-green-900/10',
+    glow: 'hover:border-green-700/25',
+  },
+  blue: {
+    gradient: 'radial-gradient(circle, rgba(30,64,175,0.08) 0%, rgba(30,64,175,0.02) 40%, transparent 65%)',
+    accent: 'text-blue-400',
+    border: 'border-blue-700/20',
+    bg: 'bg-blue-900/10',
+    glow: 'hover:border-blue-700/25',
+  },
+  yellow: {
+    gradient: 'radial-gradient(circle, rgba(161,98,7,0.07) 0%, rgba(161,98,7,0.02) 40%, transparent 65%)',
+    accent: 'text-yellow-400',
+    border: 'border-yellow-600/20',
+    bg: 'bg-yellow-900/10',
+    glow: 'hover:border-yellow-600/25',
   },
 };
 

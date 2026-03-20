@@ -56,7 +56,7 @@ export default function ClawCognition() {
       status="Live"
       statusColor="green"
       url="https://clawcognition.com"
-      accentColor="blue"
+      accentColor="green"
     />
   );
 }

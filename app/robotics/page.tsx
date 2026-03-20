@@ -46,7 +46,7 @@ export default function Robotics() {
         "Human-Machine Teaming",
         "Field Robotics",
       ]}
-      accentColor="orange"
+      accentColor="blue"
     />
   );
 }

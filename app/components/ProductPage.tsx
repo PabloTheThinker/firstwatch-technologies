@@ -20,14 +20,14 @@ interface ProductPageProps {
   status: string;
   statusColor: string;
   url: string | null;
-  accentColor: 'purple' | 'blue' | 'orange' | 'green';
+  accentColor: 'red' | 'green' | 'blue' | 'yellow';
 }
 
 const gradientMap = {
-  purple: 'radial-gradient(circle, rgba(147,51,234,0.07) 0%, rgba(147,51,234,0.02) 40%, transparent 65%)',
-  blue: 'radial-gradient(circle, rgba(37,99,235,0.08) 0%, rgba(37,99,235,0.02) 40%, transparent 65%)',
-  orange: 'radial-gradient(circle, rgba(249,115,22,0.07) 0%, rgba(249,115,22,0.02) 40%, transparent 65%)',
-  green: 'radial-gradient(circle, rgba(34,197,94,0.07) 0%, rgba(34,197,94,0.02) 40%, transparent 65%)',
+  red: 'radial-gradient(circle, rgba(185,28,28,0.07) 0%, rgba(185,28,28,0.02) 40%, transparent 65%)',
+  green: 'radial-gradient(circle, rgba(22,101,52,0.08) 0%, rgba(22,101,52,0.02) 40%, transparent 65%)',
+  blue: 'radial-gradient(circle, rgba(30,64,175,0.08) 0%, rgba(30,64,175,0.02) 40%, transparent 65%)',
+  yellow: 'radial-gradient(circle, rgba(161,98,7,0.07) 0%, rgba(161,98,7,0.02) 40%, transparent 65%)',
 };
 
 const statusColorMap: Record<string, string> = {
@@ -37,10 +37,10 @@ const statusColorMap: Record<string, string> = {
 };
 
 const accentTextMap = {
-  purple: 'text-purple-400',
-  blue: 'text-blue-400',
-  orange: 'text-orange-400',
+  red: 'text-red-400',
   green: 'text-green-400',
+  blue: 'text-blue-400',
+  yellow: 'text-yellow-400',
 };
 
 export default function ProductPage({

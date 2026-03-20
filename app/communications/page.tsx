@@ -46,7 +46,7 @@ export default function Communications() {
         "Infrastructure",
         "Disaster Comms",
       ]}
-      accentColor="green"
+      accentColor="yellow"
     />
   );
 }

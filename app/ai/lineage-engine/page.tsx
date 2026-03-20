@@ -56,7 +56,7 @@ export default function LineageEngine() {
       status="In Development"
       statusColor="blue"
       url={null}
-      accentColor="purple"
+      accentColor="red"
     />
   );
 }

@@ -46,7 +46,7 @@ export default function AI() {
         "Autonomous Reasoning",
         "Multi-Agent Systems",
       ]}
-      accentColor="purple"
+      accentColor="red"
       products={[
         {
           name: 'Lineage Engine',

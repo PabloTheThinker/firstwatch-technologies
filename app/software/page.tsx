@@ -45,7 +45,7 @@ export default function Software() {
         "AI-Powered",
         "Full-Stack",
       ]}
-      accentColor="blue"
+      accentColor="green"
       products={[
         {
           name: 'Claw Cognition',

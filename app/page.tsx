@@ -107,18 +107,22 @@ export default function Home() {
               Every product we ship, every marketplace transaction, every line of code compounds toward a single objective: field-capable robotics for disaster response and space exploration.
             </p>
           </div>
-          <div className="mx-auto mt-12 flex max-w-xl items-center justify-center gap-8 sm:gap-16">
-            <div className="text-center">
-              <div className="font-mono text-2xl font-semibold text-blue-400">Software</div>
-              <div className="mt-1 font-mono text-xs uppercase tracking-[0.15em] text-[#555577]">Funds</div>
+          <div className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
+            <div className="text-center rounded-lg border border-white/[0.04] bg-[#111118]/40 py-4 px-3">
+              <div className="font-mono text-lg font-semibold text-blue-400">AI</div>
+              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-[#555577]">Thinks</div>
             </div>
-            <svg width="40" height="2" viewBox="0 0 40 2" fill="none">
-              <line x1="0" y1="1" x2="32" y2="1" stroke="#555577" strokeWidth="1" strokeDasharray="4 4" />
-              <polygon points="34,0 40,1 34,2" fill="#555577" />
-            </svg>
-            <div className="text-center">
-              <div className="font-mono text-2xl font-semibold text-blue-400">Robotics</div>
-              <div className="mt-1 font-mono text-xs uppercase tracking-[0.15em] text-[#555577]">Builds</div>
+            <div className="text-center rounded-lg border border-white/[0.04] bg-[#111118]/40 py-4 px-3">
+              <div className="font-mono text-lg font-semibold text-blue-400">Software</div>
+              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-[#555577]">Funds</div>
+            </div>
+            <div className="text-center rounded-lg border border-white/[0.04] bg-[#111118]/40 py-4 px-3">
+              <div className="font-mono text-lg font-semibold text-blue-400">Robotics</div>
+              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-[#555577]">Builds</div>
+            </div>
+            <div className="text-center rounded-lg border border-white/[0.04] bg-[#111118]/40 py-4 px-3">
+              <div className="font-mono text-lg font-semibold text-blue-400">Comms</div>
+              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-[#555577]">Connects</div>
             </div>
           </div>
         </div>
@@ -132,11 +136,34 @@ export default function Home() {
               Divisions
             </span>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Two Arms. One Mission.
+              Four Divisions. One Mission.
             </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
+            {/* AI Division */}
+            <div className="group relative rounded-xl border border-white/[0.06] bg-[#111118]/80 backdrop-blur-sm p-8 transition-all duration-300 hover:border-blue-500/25 hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)]">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/10 border border-blue-500/20">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="3" />
+                  <line x1="12" y1="3" x2="12" y2="6" />
+                  <line x1="12" y1="18" x2="12" y2="21" />
+                  <line x1="3" y1="12" x2="6" y2="12" />
+                  <line x1="18" y1="12" x2="21" y2="12" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">First Watch AI</h3>
+              <p className="text-[#8888aa] leading-relaxed mb-6">
+                Cognitive architectures, agent frameworks, and intelligence marketplaces. Building the infrastructure for autonomous agents that reason, trade, and evolve.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Cognitive Architecture</span>
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Agent Frameworks</span>
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Intelligence</span>
+              </div>
+            </div>
+
             {/* Software Division */}
             <div className="group relative rounded-xl border border-white/[0.06] bg-[#111118]/80 backdrop-blur-sm p-8 transition-all duration-300 hover:border-blue-500/25 hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)]">
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/10 border border-blue-500/20">
@@ -148,12 +175,12 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">First Watch Software</h3>
               <p className="text-[#8888aa] leading-relaxed mb-6">
-                AI-native products and marketplaces. We build platforms where intelligent agents trade, collaborate, and generate value — creating recurring revenue that compounds daily.
+                Products and platforms that generate recurring revenue. SaaS, marketplaces, and developer tools — the engine that funds every other division.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">AI Agents</span>
-                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Marketplaces</span>
                 <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">SaaS</span>
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Marketplaces</span>
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Dev Tools</span>
               </div>
             </div>
 
@@ -168,12 +195,30 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">First Watch Robotics</h3>
               <p className="text-[#8888aa] leading-relaxed mb-6">
-                Autonomous systems for the missions that matter most. Research-driven development toward field-capable robotics for disaster response and space exploration.
+                Autonomous systems for the missions that matter most. Field-capable robotics for disaster response and space exploration — where software meets the physical world.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Disaster Response</span>
                 <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Space</span>
                 <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Autonomy</span>
+              </div>
+            </div>
+
+            {/* Communication Division */}
+            <div className="group relative rounded-xl border border-white/[0.06] bg-[#111118]/80 backdrop-blur-sm p-8 transition-all duration-300 hover:border-blue-500/25 hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)]">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600/10 border border-blue-500/20">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">First Watch Communication</h3>
+              <p className="text-[#8888aa] leading-relaxed mb-6">
+                Secure, resilient communication infrastructure. Building the signal layer that connects agents, systems, and people — especially when traditional networks fail.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Signal</span>
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Mesh Networks</span>
+                <span className="rounded-md border border-blue-500/20 bg-blue-500/5 px-3 py-1 font-mono text-xs text-blue-400">Infrastructure</span>
               </div>
             </div>
           </div>

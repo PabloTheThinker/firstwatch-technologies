@@ -46,6 +46,22 @@ export default function AI() {
         "Multi-Agent Systems",
       ]}
       accentColor="purple"
+      products={[
+        {
+          name: 'Claw Cognition',
+          tagline: 'Intelligence marketplace for AI agents. Cognitive lenses, USDC payments, Base L2.',
+          status: 'Live',
+          statusColor: 'green',
+          href: '/ai/claw-cognition',
+        },
+        {
+          name: 'Lineage Engine',
+          tagline: 'Open-source cognitive architecture framework. Emotion, neural mesh, immune system, DNA evolution, and portable identity.',
+          status: 'In Development',
+          statusColor: 'blue',
+          href: '/ai/lineage-engine',
+        },
+      ]}
     />
   );
 }

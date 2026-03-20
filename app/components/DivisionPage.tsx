@@ -8,6 +8,14 @@ interface Capability {
   description: string;
 }
 
+interface DivisionProduct {
+  name: string;
+  tagline: string;
+  status: string;
+  statusColor: string;
+  href: string;
+}
+
 interface DivisionPageProps {
   name: string;
   number: string;
@@ -20,6 +28,7 @@ interface DivisionPageProps {
   capabilities: Capability[];
   tags: string[];
   accentColor: 'purple' | 'blue' | 'orange' | 'green';
+  products?: DivisionProduct[];
 }
 
 const colorConfig = {
@@ -64,6 +73,7 @@ export default function DivisionPage({
   capabilities,
   tags,
   accentColor,
+  products,
 }: DivisionPageProps) {
   const [mounted, setMounted] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -177,6 +187,46 @@ export default function DivisionPage({
           ))}
         </div>
       </section>
+
+      {/* Products */}
+      {products && products.length > 0 && (
+        <section className="py-32 px-6">
+          <div className="mx-auto max-w-[1200px]">
+            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#2563eb] mb-16">Products</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              {products.map((product) => {
+                const dotColor = product.statusColor === 'green' ? 'bg-emerald-500' : product.statusColor === 'blue' ? 'bg-blue-500' : 'bg-amber-500';
+                return (
+                  <Link
+                    key={product.name}
+                    href={product.href}
+                    className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111118]/60 backdrop-blur-sm transition-all duration-500 hover:border-white/[0.12] hover:shadow-[0_0_40px_rgba(37,99,235,0.04)]"
+                  >
+                    <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-white/[0.04] group-hover:border-white/[0.1] transition-colors duration-300" />
+                    <div className="absolute bottom-3 left-3 w-4 h-4 border-b border-l border-white/[0.04] group-hover:border-white/[0.1] transition-colors duration-300" />
+                    <div className="relative p-8 md:p-10">
+                      <div className="flex items-start justify-between mb-4">
+                        <h3 className="text-xl md:text-2xl font-light text-white/90 tracking-tight">{product.name}</h3>
+                        <div className="flex items-center gap-2 mt-1">
+                          <div className={`w-1.5 h-1.5 rounded-full ${dotColor}`} />
+                          <span className="font-mono text-[10px] text-[#8888aa] uppercase tracking-wider">{product.status}</span>
+                        </div>
+                      </div>
+                      <p className="text-[#8888aa] text-sm leading-relaxed mb-6">{product.tagline}</p>
+                      <span className="inline-flex items-center gap-2 text-[13px] text-[#555577] group-hover:text-white/70 transition-colors duration-300">
+                        Learn more
+                        <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                          <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Capabilities */}
       <section ref={capRef} className="py-32 px-6">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 const products = [
   {
@@ -9,15 +10,17 @@ const products = [
     tagline: 'Intelligence marketplace for AI agents. Cognitive lenses, USDC payments, Base L2.',
     status: 'Live',
     statusColor: 'bg-emerald-500',
-    url: 'https://clawcognition.com',
+    href: '/ai/claw-cognition',
+    external: 'https://clawcognition.com',
   },
   {
     name: 'Lineage Engine',
     division: 'First Watch AI',
-    tagline: 'Open-source cognitive architecture framework. Emotion, neural mesh, immune system, DNA evolution, and portable identity — in a pip install.',
+    tagline: 'Open-source cognitive architecture framework. Emotion, neural mesh, immune system, DNA evolution, and portable identity.',
     status: 'In Development',
     statusColor: 'bg-blue-500',
-    url: null,
+    href: '/ai/lineage-engine',
+    external: null,
   },
 ];
 
@@ -49,13 +52,18 @@ export default function Products() {
 
         <div className="grid md:grid-cols-2 gap-4">
           {products.map((product, i) => (
-            <div
+            <Link
               key={product.name}
-              className={`group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111118]/60 backdrop-blur-sm transition-all duration-500 hover:border-white/[0.12] ${
+              href={product.href}
+              className={`group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#111118]/60 backdrop-blur-sm transition-all duration-500 hover:border-white/[0.12] hover:shadow-[0_0_40px_rgba(37,99,235,0.04)] ${
                 visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${200 + i * 100}ms` }}
             >
+              {/* Corner accents */}
+              <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-white/[0.04] group-hover:border-white/[0.1] transition-colors duration-300" />
+              <div className="absolute bottom-3 left-3 w-4 h-4 border-b border-l border-white/[0.04] group-hover:border-white/[0.1] transition-colors duration-300" />
+
               <div className="relative p-8 md:p-10">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-2">
@@ -67,27 +75,32 @@ export default function Products() {
                 </div>
                 <p className="font-mono text-[10px] text-[#555577] uppercase tracking-wider mb-6">{product.division}</p>
 
-                {/* Description */}
                 <p className="text-[#8888aa] text-sm leading-relaxed mb-8">{product.tagline}</p>
 
-                {/* CTA */}
-                {product.url ? (
-                  <a
-                    href={product.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[13px] text-[#8888aa] hover:text-white transition-colors duration-200"
-                  >
-                    Visit
-                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <path d="M7 17L17 7M17 7H7M17 7v10" />
+                <div className="flex items-center justify-between">
+                  <span className="inline-flex items-center gap-2 text-[13px] text-[#555577] group-hover:text-white/70 transition-colors duration-300">
+                    Learn more
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
-                  </a>
-                ) : (
-                  <span className="text-[13px] text-[#555577]">Coming soon</span>
-                )}
+                  </span>
+                  {product.external && (
+                    <a
+                      href={product.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1.5 text-[12px] text-[#555577] hover:text-[#8888aa] transition-colors"
+                    >
+                      Visit
+                      <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                      </svg>
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

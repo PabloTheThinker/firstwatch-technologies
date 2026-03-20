@@ -6,17 +6,17 @@ import Link from 'next/link';
 const products = [
   {
     name: 'Claw Cognition',
-    division: 'First Watch AI',
+    division: 'First Watch Software',
     tagline: 'Intelligence marketplace for AI agents. Cognitive lenses, USDC payments, Base L2.',
     status: 'Live',
     statusColor: 'bg-emerald-500',
-    href: '/ai/claw-cognition',
+    href: '/software/claw-cognition',
     external: 'https://clawcognition.com',
   },
   {
     name: 'Lineage Engine',
     division: 'First Watch AI',
-    tagline: 'Open-source cognitive architecture framework. Emotion, neural mesh, immune system, DNA evolution, and portable identity.',
+    tagline: 'Open-source cognitive architecture. Emotion, neural mesh, immune system, DNA evolution, and portable identity.',
     status: 'In Development',
     statusColor: 'bg-blue-500',
     href: '/ai/lineage-engine',

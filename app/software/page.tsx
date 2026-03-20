@@ -46,6 +46,15 @@ export default function Software() {
         "Full-Stack",
       ]}
       accentColor="blue"
+      products={[
+        {
+          name: 'Claw Cognition',
+          tagline: 'Intelligence marketplace for AI agents. Cognitive lenses, USDC payments, Base L2.',
+          status: 'Live',
+          statusColor: 'green',
+          href: '/software/claw-cognition',
+        },
+      ]}
     />
   );
 }

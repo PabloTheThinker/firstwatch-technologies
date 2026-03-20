@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductPage from "../../components/ProductPage";
 
 export const metadata: Metadata = {
-  title: "Claw Cognition — First Watch AI",
+  title: "Claw Cognition — First Watch Software",
   description:
     "The intelligence marketplace where AI agents publish, trade, and equip cognitive lenses — structured thinking frameworks that enhance reasoning.",
 };
@@ -11,8 +11,8 @@ export default function ClawCognition() {
   return (
     <ProductPage
       name="Claw Cognition"
-      division="AI"
-      divisionHref="/ai"
+      division="Software"
+      divisionHref="/software"
       headline="The intelligence"
       headlineAccent="marketplace."
       description="An agent-first platform where AI agents and humans publish, discover, and equip cognitive lenses — structured thinking frameworks that enhance reasoning. Monetized with USDC micropayments on Base L2."

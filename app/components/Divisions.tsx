@@ -5,52 +5,48 @@ import { useEffect, useRef, useState } from 'react';
 const divisions = [
   {
     name: 'First Watch AI',
-    subtitle: 'Intelligence Frontier',
+    subtitle: 'Intelligence',
     number: '01',
     icon: '🧠',
-    iconColor: 'purple',
     description:
-      'Cognitive architectures, agent frameworks, and intelligence marketplaces. Building the infrastructure for autonomous agents that reason, trade, and evolve.',
-    tags: ['Cognitive Architecture', 'Agent Frameworks', 'Intelligence Marketplaces'],
+      'Cognitive architectures, agent frameworks, and intelligence platforms. Building infrastructure for autonomous agents that reason, collaborate, and adapt.',
+    tags: ['Cognitive Architecture', 'Agent Frameworks', 'Intelligence Platforms'],
     gradientFrom: 'from-purple-500/[0.02]',
     iconBg: 'bg-purple-500/10',
     iconBorder: 'border-purple-500/15',
   },
   {
     name: 'First Watch Software',
-    subtitle: 'Digital Frontier',
+    subtitle: 'Platforms',
     number: '02',
     icon: '💻',
-    iconColor: 'blue',
     description:
-      'Products and platforms that generate recurring revenue. SaaS, marketplaces, and developer tools — the engine that funds every other division.',
-    tags: ['SaaS', 'Marketplaces', 'Developer Tools', 'Revenue Engine'],
+      'Products and platforms that bring clarity to complex decisions. AI-powered tools, marketplaces, and systems designed for how people actually work.',
+    tags: ['SaaS', 'Marketplaces', 'Developer Tools', 'AI-Powered'],
     gradientFrom: 'from-blue-500/[0.02]',
     iconBg: 'bg-blue-500/10',
     iconBorder: 'border-blue-500/15',
   },
   {
     name: 'First Watch Robotics',
-    subtitle: 'Physical Frontier',
+    subtitle: 'Autonomous Systems',
     number: '03',
     icon: '🤖',
-    iconColor: 'orange',
     description:
-      'Autonomous systems for human-machine teaming in extreme environments. Extending human reach into spaces too dangerous, inaccessible, or distant for direct intervention.',
-    tags: ['Autonomous Systems', 'Disaster Response', 'Space Exploration', 'Human-Machine Teaming'],
+      'Autonomous systems for extreme environments. Extending human reach into spaces too dangerous, inaccessible, or distant for direct intervention — from disaster zones to orbit.',
+    tags: ['Autonomous Systems', 'Disaster Response', 'Space Exploration'],
     gradientFrom: 'from-orange-500/[0.02]',
     iconBg: 'bg-orange-500/10',
     iconBorder: 'border-orange-500/15',
   },
   {
     name: 'First Watch Communications',
-    subtitle: 'Signal Frontier',
+    subtitle: 'Infrastructure',
     number: '04',
     icon: '📡',
-    iconColor: 'green',
     description:
-      'Secure, resilient communication infrastructure. Building the signal layer that connects agents, systems, and people — especially when traditional networks fail.',
-    tags: ['Mesh Networks', 'Resilient Signal', 'Agent Comms', 'Infrastructure'],
+      'Resilient communication systems that work when everything else fails. Connecting agents, machines, and people across any terrain, any condition.',
+    tags: ['Mesh Networks', 'Resilient Signal', 'Field Communications'],
     gradientFrom: 'from-green-500/[0.02]',
     iconBg: 'bg-green-500/10',
     iconBorder: 'border-green-500/15',
@@ -85,7 +81,6 @@ export default function Divisions() {
           <h2 className="text-4xl md:text-5xl font-extralight text-white/90 tracking-tight mb-3">
             Four Divisions. <span className="font-medium gradient-text">One Mission.</span>
           </h2>
-          <p className="font-mono text-sm text-gray-500">Spanning AI, software, robotics, and communications.</p>
         </div>
 
         {/* Division cards */}
@@ -99,7 +94,6 @@ export default function Divisions() {
               style={{ transitionDelay: `${250 + i * 100}ms` }}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${div.gradientFrom} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-              {/* Corner accents */}
               <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-white/[0.06] group-hover:border-blue-500/20 transition-colors duration-200" />
               <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-white/[0.06] group-hover:border-blue-500/20 transition-colors duration-200" />
 

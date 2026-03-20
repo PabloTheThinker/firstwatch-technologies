@@ -21,12 +21,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "First Watch Technologies",
   description:
-    "Building the bridge between intelligent software and autonomous systems.",
+    "Building support systems for humanity through intelligent software and autonomous systems.",
   metadataBase: new URL("https://firstwatchtechnologies.com"),
   openGraph: {
     title: "First Watch Technologies",
     description:
-      "Building the bridge between intelligent software and autonomous systems.",
+      "Building support systems for humanity through intelligent software and autonomous systems.",
     type: "website",
   },
 };

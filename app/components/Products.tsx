@@ -53,7 +53,7 @@ export default function Products() {
           <h2 className="text-4xl md:text-5xl font-extralight text-white/90 tracking-tight mb-3">
             What We&apos;re <span className="font-medium gradient-text">Building</span>
           </h2>
-          <p className="font-mono text-sm text-gray-500">Shipping products that fund the mission.</p>
+          <p className="font-mono text-sm text-gray-500">Platforms and tools, live and in development.</p>
         </div>
 
         {/* Product cards */}

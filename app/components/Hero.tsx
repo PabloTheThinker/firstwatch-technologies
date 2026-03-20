@@ -4,9 +4,9 @@ import { useEffect, useState, useRef } from 'react';
 
 const philosophyLines = [
   'See a path, secure a path.',
-  'Software funds. Robotics builds.',
-  'Support systems for humanity.',
-  'Building in public.',
+  'Building support systems for humanity.',
+  'Intelligent software. Autonomous systems.',
+  'The future is built, not predicted.',
 ];
 
 export default function Hero() {

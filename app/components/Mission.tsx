@@ -48,11 +48,11 @@ export default function Mission() {
                 <span className="text-2xl">🔭</span>
               </div>
               <div className="space-y-4">
-                <p className="text-gray-400 leading-relaxed max-w-2xl">
-                  First Watch Technologies is a parent company with four divisions spanning AI, robotics, software, and communications. We build support systems for humanity — tools that illuminate the landscape, surface what matters, and guide people toward solutions they can execute with confidence.
+                <p className="text-gray-300 leading-relaxed max-w-2xl text-lg">
+                  First Watch Technologies builds support systems for humanity — intelligent software and autonomous systems that expand what people can do, reach, and protect.
                 </p>
                 <p className="text-gray-400 leading-relaxed max-w-2xl">
-                  The strategy: fund long-term ambitions in autonomous systems for disaster response and space exploration through nearer-term revenue from software and AI products. Solo-founded, building publicly, working toward the bigger vision.
+                  We develop AI platforms that bring clarity to complex decisions, communication infrastructure that stays resilient when traditional networks fail, and autonomous robotics for disaster response and space exploration.
                 </p>
               </div>
             </div>
@@ -62,15 +62,14 @@ export default function Mission() {
         {/* Four pillars */}
         <div className={`grid grid-cols-2 md:grid-cols-4 gap-3 transition-all duration-700 delay-400 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
           {[
-            { label: 'AI', verb: 'Thinks', icon: '🧠' },
-            { label: 'Software', verb: 'Funds', icon: '💻' },
-            { label: 'Robotics', verb: 'Builds', icon: '🤖' },
-            { label: 'Comms', verb: 'Connects', icon: '📡' },
+            { label: 'AI', icon: '🧠' },
+            { label: 'Software', icon: '💻' },
+            { label: 'Robotics', icon: '🤖' },
+            { label: 'Communications', icon: '📡' },
           ].map((pillar) => (
             <div key={pillar.label} className="text-center rounded-xl border border-white/[0.04] bg-[#111118]/40 py-5 px-3 hover:border-blue-500/20 transition-colors duration-200">
               <span className="text-xl mb-2 block">{pillar.icon}</span>
               <div className="font-mono text-sm font-medium text-white/80">{pillar.label}</div>
-              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-gray-600">{pillar.verb}</div>
             </div>
           ))}
         </div>

@@ -30,7 +30,7 @@ export default function Navigation() {
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 flex items-center justify-between h-16">
         <Link href="/" className="font-medium text-sm text-white tracking-tight hover:opacity-80 transition-opacity">
-          First Watch Technologies
+          Vektra Technologies
         </Link>
 
         {/* Desktop */}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import DivisionPage from "../components/DivisionPage";
 
 export const metadata: Metadata = {
-  title: "First Watch AI — Intelligence",
+  title: "Vektra AI — Intelligence",
   description:
     "Cognitive architectures, agent frameworks, and intelligence platforms that give autonomous systems the ability to reason, adapt, and evolve.",
 };
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 export default function AI() {
   return (
     <DivisionPage
-      name="First Watch AI"
+      name="Vektra AI"
       number="01"
       subtitle="Intelligence"
       icon="🧠"
       headline="Building the minds"
       headlineAccent="behind the machines."
-      description="First Watch AI develops cognitive architectures and agent frameworks that give autonomous systems the ability to reason, collaborate, and adapt in real time."
+      description="Vektra AI develops cognitive architectures and agent frameworks that give autonomous systems the ability to reason, collaborate, and adapt in real time."
       paragraphs={[
         "Intelligence is infrastructure. Every autonomous agent, every robotic system, and every communication node requires a cognitive layer capable of processing context, making decisions under uncertainty, and learning from outcomes.",
         "Our frameworks go beyond prompt-response patterns. We build systems with internal state — emotion models that influence decision-making, neural networks that strengthen through use, and behavioral genomes that evolve across generations.",

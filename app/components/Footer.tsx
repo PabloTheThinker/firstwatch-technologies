@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-[1400px]">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <span className="text-xs text-[#555577]">
-            &copy; {new Date().getFullYear()} First Watch Technologies
+            &copy; {new Date().getFullYear()} Vektra Technologies
           </span>
 
           <div className="flex items-center gap-8">

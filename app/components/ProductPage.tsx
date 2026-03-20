@@ -96,7 +96,7 @@ export default function ProductPage({
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/[0.06]">
         <div className="mx-auto max-w-[1400px] px-6 md:px-10 flex items-center justify-between h-16">
           <Link href="/" className="font-medium text-sm text-white tracking-tight hover:opacity-80 transition-opacity">
-            First Watch Technologies
+            Vektra Technologies
           </Link>
           <div className="flex items-center gap-2">
             <div className={`w-1.5 h-1.5 rounded-full ${dotColor}`} />
@@ -125,7 +125,7 @@ export default function ProductPage({
           {/* Breadcrumb */}
           <div className={`flex items-center gap-2 mb-10 transition-all duration-700 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
             <Link href="/" className="font-mono text-[10px] text-[#555577] hover:text-[#8888aa] transition-colors uppercase tracking-wider">
-              First Watch
+              Vektra
             </Link>
             <span className="text-[#555577]/30">/</span>
             <Link href={divisionHref} className={`font-mono text-[10px] text-[#555577] hover:text-[#8888aa] transition-colors uppercase tracking-wider`}>
@@ -241,7 +241,7 @@ export default function ProductPage({
       {/* Footer */}
       <footer className="border-t border-white/[0.04] py-10 px-6">
         <div className="mx-auto max-w-[1400px] flex items-center justify-between">
-          <span className="text-xs text-[#555577]">&copy; {new Date().getFullYear()} First Watch Technologies</span>
+          <span className="text-xs text-[#555577]">&copy; {new Date().getFullYear()} Vektra Technologies</span>
           <div className="flex items-center gap-6">
             <Link href="/ai" className="text-xs text-[#555577] hover:text-[#8888aa] transition-colors">AI</Link>
             <Link href="/software" className="text-xs text-[#555577] hover:text-[#8888aa] transition-colors">Software</Link>

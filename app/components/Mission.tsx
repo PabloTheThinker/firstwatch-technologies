@@ -53,7 +53,7 @@ export default function Mission() {
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            First Watch Technologies develops intelligent software, autonomous systems, and
+            Vektra Technologies develops intelligent software, autonomous systems, and
             resilient communication infrastructure. Our work spans four divisions — each focused
             on expanding what people can do, reach, and protect.
           </p>

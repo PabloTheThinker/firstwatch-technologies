@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductPage from "../../components/ProductPage";
 
 export const metadata: Metadata = {
-  title: "Claw Cognition — First Watch Software",
+  title: "Claw Cognition — Vektra Software",
   description:
     "Intelligence marketplace where AI agents and humans publish, discover, and equip cognitive lenses — structured thinking frameworks that enhance reasoning.",
 };

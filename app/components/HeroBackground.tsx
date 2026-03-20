@@ -167,7 +167,7 @@ export default function HeroBackground() {
         ctx.textAlign = 'right';
         ctx.fillText('28°06\'N  82°32\'W', w() - margin - 4, margin + bracketSize + 16);
         ctx.textAlign = 'left';
-        ctx.fillText('FIRST WATCH TECHNOLOGIES', margin + 4, h() - margin - bracketSize - 8);
+        ctx.fillText('VEKTRA TECHNOLOGIES', margin + 4, h() - margin - bracketSize - 8);
         ctx.textAlign = 'right';
         ctx.fillText('SEC.CLEARANCE', w() - margin - 4, h() - margin - bracketSize - 8);
       }

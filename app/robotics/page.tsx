@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import DivisionPage from "../components/DivisionPage";
 
 export const metadata: Metadata = {
-  title: "First Watch Robotics — Autonomous Systems",
+  title: "Vektra Robotics — Autonomous Systems",
   description:
     "Autonomous systems designed to operate in extreme environments — disaster zones, remote terrain, and beyond Earth.",
 };
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 export default function Robotics() {
   return (
     <DivisionPage
-      name="First Watch Robotics"
+      name="Vektra Robotics"
       number="03"
       subtitle="Autonomous Systems"
       icon="🤖"
       headline="Extending human reach"
       headlineAccent="where it matters most."
-      description="First Watch Robotics develops autonomous systems for environments where direct human operation is too dangerous, too remote, or too slow to be effective."
+      description="Vektra Robotics develops autonomous systems for environments where direct human operation is too dangerous, too remote, or too slow to be effective."
       paragraphs={[
         "When infrastructure collapses, when floodwaters rise, or when wildfire isolates an entire community, first responders need force multipliers. Autonomous systems that navigate rubble, maintain communication links, and deliver critical supplies — without putting additional lives at risk.",
         "Beyond Earth, the same engineering principles apply at a different scale. Systems capable of surveying, constructing, and maintaining infrastructure in environments where payload mass is measured in grams and every decision must be made without a human in the loop.",

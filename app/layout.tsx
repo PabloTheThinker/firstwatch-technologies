@@ -19,12 +19,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "First Watch Technologies",
+  title: "Vektra Technologies",
   description:
     "Intelligent software, autonomous systems, and resilient infrastructure. Four divisions building support systems for humanity.",
-  metadataBase: new URL("https://firstwatchtechnologies.com"),
+  metadataBase: new URL("https://vektratechnologies.com"),
   openGraph: {
-    title: "First Watch Technologies",
+    title: "Vektra Technologies",
     description:
       "Intelligent software, autonomous systems, and resilient infrastructure. Four divisions building support systems for humanity.",
     type: "website",

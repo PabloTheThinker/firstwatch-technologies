@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import DivisionPage from "../components/DivisionPage";
 
 export const metadata: Metadata = {
-  title: "First Watch Software — Platforms",
+  title: "Vektra Software — Platforms",
   description:
     "AI-powered platforms and marketplaces designed to bring clarity to complex decisions at scale.",
 };
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 export default function Software() {
   return (
     <DivisionPage
-      name="First Watch Software"
+      name="Vektra Software"
       number="02"
       subtitle="Platforms"
       icon="💻"
       headline="Tools that bring clarity"
       headlineAccent="to complex decisions."
-      description="First Watch Software builds AI-powered platforms, marketplaces, and developer tools designed around how people and agents actually work together."
+      description="Vektra Software builds AI-powered platforms, marketplaces, and developer tools designed around how people and agents actually work together."
       paragraphs={[
         "Every product we ship addresses a specific problem with measurable impact. We iterate based on production data, not assumptions, and we build in public so our users can see what's coming.",
         "Our software division turns research into products and products into platforms. Each system is designed at the intersection of human intent and machine capability — where intelligent tools amplify what people can accomplish.",

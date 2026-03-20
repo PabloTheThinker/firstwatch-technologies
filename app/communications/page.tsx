@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import DivisionPage from "../components/DivisionPage";
 
 export const metadata: Metadata = {
-  title: "First Watch Communications — Infrastructure",
+  title: "Vektra Communications — Infrastructure",
   description:
     "Resilient communication infrastructure that maintains connectivity when centralized systems fail.",
 };
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 export default function Communications() {
   return (
     <DivisionPage
-      name="First Watch Communications"
+      name="Vektra Communications"
       number="04"
       subtitle="Infrastructure"
       icon="📡"
       headline="Signal that survives"
       headlineAccent="when everything else fails."
-      description="First Watch Communications builds resilient communication systems designed to maintain connectivity when centralized infrastructure is degraded, damaged, or destroyed."
+      description="Vektra Communications builds resilient communication systems designed to maintain connectivity when centralized infrastructure is degraded, damaged, or destroyed."
       paragraphs={[
         "Traditional communication infrastructure relies on centralized points of failure. A downed tower, a severed cable, or a jammed frequency can isolate entire communities and disable the autonomous systems deployed to assist them.",
         "Our systems assume failure as a baseline. Mesh networks that self-organize and self-heal. Protocols that adapt to low bandwidth, high latency, and intermittent connectivity. Infrastructure that strengthens under load rather than collapsing under it.",

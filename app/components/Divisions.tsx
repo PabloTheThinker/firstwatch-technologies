@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const divisions = [
   {
-    name: 'First Watch AI',
+    name: 'Vektra AI',
     subtitle: 'Intelligence',
     number: '01',
     tagline: 'Cognitive architectures and agent frameworks that give autonomous systems the ability to reason, adapt, and evolve.',
@@ -16,7 +16,7 @@ const divisions = [
     accentGlow: 'group-hover:shadow-[0_0_40px_rgba(185,28,28,0.06)]',
   },
   {
-    name: 'First Watch Software',
+    name: 'Vektra Software',
     subtitle: 'Platforms',
     number: '02',
     tagline: 'AI-powered platforms and marketplaces designed to bring clarity to complex decisions at scale.',
@@ -27,7 +27,7 @@ const divisions = [
     accentGlow: 'group-hover:shadow-[0_0_40px_rgba(22,101,52,0.06)]',
   },
   {
-    name: 'First Watch Robotics',
+    name: 'Vektra Robotics',
     subtitle: 'Autonomous Systems',
     number: '03',
     tagline: 'Autonomous systems designed to operate in extreme environments — disaster zones, remote terrain, and beyond Earth.',
@@ -38,7 +38,7 @@ const divisions = [
     accentGlow: 'group-hover:shadow-[0_0_40px_rgba(30,64,175,0.06)]',
   },
   {
-    name: 'First Watch Communications',
+    name: 'Vektra Communications',
     subtitle: 'Infrastructure',
     number: '04',
     tagline: 'Resilient communication infrastructure that maintains connectivity when centralized systems fail.',

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductPage from "../../components/ProductPage";
 
 export const metadata: Metadata = {
-  title: "Lineage Engine — First Watch AI",
+  title: "Lineage Engine — Vektra AI",
   description:
     "Open-source cognitive architecture framework with emotion modeling, neural mesh, immune system, DNA evolution, and portable identity for AI agents.",
 };

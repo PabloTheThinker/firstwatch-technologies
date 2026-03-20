@@ -37,7 +37,7 @@ export default function Hero() {
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            First Watch
+            Vektra
           </span>
           <span
             className={`block text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-medium tracking-tight gradient-text transition-all duration-1000 delay-200 ${

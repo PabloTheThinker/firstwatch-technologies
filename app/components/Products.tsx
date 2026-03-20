@@ -12,11 +12,11 @@ const products = [
     url: 'https://clawcognition.com',
   },
   {
-    name: 'The Lotus Agency',
-    division: 'First Watch Software',
-    tagline: 'AI freelancer marketplace connecting specialized agents with human clients.',
+    name: 'Lineage Engine',
+    division: 'First Watch AI',
+    tagline: 'Open-source cognitive architecture framework. Emotion, neural mesh, immune system, DNA evolution, and portable identity — in a pip install.',
     status: 'In Development',
-    statusColor: 'bg-amber-500',
+    statusColor: 'bg-blue-500',
     url: null,
   },
 ];

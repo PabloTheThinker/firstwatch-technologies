@@ -14,7 +14,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative h-[100dvh] flex flex-col items-center justify-center overflow-hidden">
       {/* Three.js particle field */}
       <ParticleField />
 
@@ -57,19 +57,19 @@ export default function Hero() {
           Intelligent software. Autonomous systems. Resilient infrastructure.
         </p>
         <div
-          className={`mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 transition-all duration-1000 delay-500 ${
+          className={`mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 max-w-xs sm:max-w-none mx-auto transition-all duration-1000 delay-500 ${
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
           <a
             href="#divisions"
-            className="w-full sm:w-auto px-7 py-3 rounded-lg bg-[#2563eb] text-white text-sm font-medium hover:bg-[#3b82f6] transition-all duration-200 shadow-[0_0_20px_rgba(37,99,235,0.2)] hover:shadow-[0_0_30px_rgba(37,99,235,0.35)] text-center"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-lg bg-[#2563eb] text-white text-sm font-medium hover:bg-[#3b82f6] transition-all duration-200 shadow-[0_0_20px_rgba(37,99,235,0.2)] hover:shadow-[0_0_30px_rgba(37,99,235,0.35)] text-center"
           >
             Explore Divisions
           </a>
           <a
             href="#mission"
-            className="w-full sm:w-auto px-7 py-3 rounded-lg border border-white/[0.1] text-[#8888aa] text-sm hover:text-white hover:border-white/[0.2] transition-all duration-200 text-center"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-lg border border-white/[0.1] text-[#8888aa] text-sm hover:text-white hover:border-white/[0.2] transition-all duration-200 text-center"
           >
             Our Mission
           </a>

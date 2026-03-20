@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --color-background: #000000;
-  --color-foreground: #ffffff;
+  --bg: #0a0a0f;
+  --bg-elevated: #111118;
+  --bg-glass: rgba(17, 17, 24, 0.8);
+  --text: #f0f0f5;
+  --text-secondary: #8888aa;
+  --text-muted: #555577;
+  --accent: #2563eb;
+  --accent-light: #3b82f6;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(37, 99, 235, 0.25);
 }
 
 @theme inline {
-  --color-background: var(--color-background);
-  --color-foreground: var(--color-foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
@@ -22,23 +28,28 @@ html {
 }
 
 body {
-  background: #000000;
-  color: #ffffff;
+  background: var(--bg);
+  color: var(--text);
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  padding: 0;
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  background: rgba(37, 99, 235, 0.3);
+  color: var(--text);
 }
 
-::-webkit-scrollbar {
-  width: 0px;
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #252540; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
@@ -47,13 +58,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-p {
-  margin: 0;
-}
+p { margin: 0; line-height: 1.7; }
+a { color: inherit; text-decoration: none; }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @media (prefers-reduced-motion: reduce) {

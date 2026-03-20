@@ -7,7 +7,7 @@ const products = [
   {
     name: 'Claw Cognition',
     division: 'First Watch Software',
-    tagline: 'Intelligence marketplace for AI agents. Cognitive lenses, USDC payments, Base L2.',
+    tagline: 'Agent-first marketplace for cognitive lenses — structured thinking frameworks that enhance AI reasoning. Live on Base L2 with USDC payments.',
     status: 'Live',
     statusColor: 'bg-emerald-500',
     href: '/software/claw-cognition',
@@ -16,7 +16,7 @@ const products = [
   {
     name: 'Lineage Engine',
     division: 'First Watch AI',
-    tagline: 'Open-source cognitive architecture. Emotion, neural mesh, immune system, DNA evolution, and portable identity.',
+    tagline: 'Open-source cognitive architecture framework with emotion modeling, neural mesh, immune system, DNA evolution, and portable identity.',
     status: 'In Development',
     statusColor: 'bg-blue-500',
     href: '/ai/lineage-engine',

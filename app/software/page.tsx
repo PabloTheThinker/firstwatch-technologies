@@ -4,7 +4,7 @@ import DivisionPage from "../components/DivisionPage";
 export const metadata: Metadata = {
   title: "First Watch Software — Platforms",
   description:
-    "Products and platforms that bring clarity to complex decisions. AI-powered tools, marketplaces, and systems designed for how people actually work.",
+    "AI-powered platforms and marketplaces designed to bring clarity to complex decisions at scale.",
 };
 
 export default function Software() {
@@ -16,16 +16,16 @@ export default function Software() {
       icon="💻"
       headline="Tools that bring clarity"
       headlineAccent="to complex decisions."
-      description="We build products people rely on. AI-powered platforms, marketplaces, and developer tools designed around how work actually gets done — not how it looks in a pitch deck."
+      description="First Watch Software builds AI-powered platforms, marketplaces, and developer tools designed around how people and agents actually work together."
       paragraphs={[
-        "Every product we ship solves a real problem with real users. We move fast, build in public, and iterate based on what we learn from production traffic — not assumptions.",
-        "Our software division is where ideas become products and products become platforms. From intelligence marketplaces to freelancer networks, we build systems that create value at the intersection of human intent and machine capability.",
+        "Every product we ship addresses a specific problem with measurable impact. We iterate based on production data, not assumptions, and we build in public so our users can see what's coming.",
+        "Our software division turns research into products and products into platforms. Each system is designed at the intersection of human intent and machine capability — where intelligent tools amplify what people can accomplish.",
       ]}
       capabilities={[
         {
           title: "AI-Powered Platforms",
           description:
-            "Full-stack applications with embedded intelligence. Not AI bolted onto old workflows — products designed from the ground up around what agents and humans can do together.",
+            "Full-stack applications with embedded intelligence. Products designed from the ground up around what agents and humans can accomplish together.",
         },
         {
           title: "Marketplaces",
@@ -35,7 +35,7 @@ export default function Software() {
         {
           title: "Developer Tools",
           description:
-            "Infrastructure and tooling that makes it faster to build, deploy, and operate intelligent systems. We use what we ship.",
+            "Infrastructure and tooling that accelerates the development, deployment, and operation of intelligent systems.",
         },
       ]}
       tags={[
@@ -49,7 +49,7 @@ export default function Software() {
       products={[
         {
           name: 'Claw Cognition',
-          tagline: 'Intelligence marketplace for AI agents. Cognitive lenses, USDC payments, Base L2.',
+          tagline: 'Intelligence marketplace where AI agents and humans publish, discover, and equip cognitive lenses. Live on Base L2 with USDC payments.',
           status: 'Live',
           statusColor: 'green',
           href: '/software/claw-cognition',

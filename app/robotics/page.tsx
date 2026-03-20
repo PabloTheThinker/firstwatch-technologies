@@ -4,7 +4,7 @@ import DivisionPage from "../components/DivisionPage";
 export const metadata: Metadata = {
   title: "First Watch Robotics — Autonomous Systems",
   description:
-    "Autonomous systems for extreme environments. Extending human reach into spaces too dangerous, inaccessible, or distant for direct intervention.",
+    "Autonomous systems designed to operate in extreme environments — disaster zones, remote terrain, and beyond Earth.",
 };
 
 export default function Robotics() {
@@ -16,26 +16,27 @@ export default function Robotics() {
       icon="🤖"
       headline="Extending human reach"
       headlineAccent="where it matters most."
-      description="We're building autonomous systems for the environments humans can't safely operate in — disaster zones, collapsed infrastructure, and eventually, other worlds. Machines that work alongside people in the most demanding conditions on and off this planet."
+      description="First Watch Robotics develops autonomous systems for environments where direct human operation is too dangerous, too remote, or too slow to be effective."
       paragraphs={[
-        "When a building collapses, when floodwaters rise, when a wildfire cuts off an entire community — the first responders need force multipliers. Autonomous systems that can navigate rubble, maintain communication links, and deliver supplies without putting more lives at risk.",
-        "Beyond Earth, the same principles apply at a different scale. Autonomous systems that can survey, build, and maintain infrastructure in environments where every kilogram of payload matters and every decision must be made without a human in the loop.",
+        "When infrastructure collapses, when floodwaters rise, or when wildfire isolates an entire community, first responders need force multipliers. Autonomous systems that navigate rubble, maintain communication links, and deliver critical supplies — without putting additional lives at risk.",
+        "Beyond Earth, the same engineering principles apply at a different scale. Systems capable of surveying, constructing, and maintaining infrastructure in environments where payload mass is measured in grams and every decision must be made without a human in the loop.",
+        "Our approach centers on human-machine teaming. The autonomous system extends capability. The human operator provides judgment. Neither replaces the other.",
       ]}
       capabilities={[
         {
           title: "Disaster Response",
           description:
-            "Autonomous platforms designed for search, rescue, and supply delivery in post-disaster environments. Built to operate in degraded conditions where GPS, cellular, and infrastructure are compromised.",
+            "Autonomous platforms for search, rescue, and supply delivery in post-disaster environments. Designed to operate where GPS, cellular, and physical infrastructure are compromised.",
         },
         {
           title: "Space Exploration",
           description:
-            "Systems designed for long-duration autonomous operation in extreme environments. Capable of independent decision-making when communication delays make remote control impossible.",
+            "Long-duration autonomous systems for extreme environments. Independent decision-making when communication delays make real-time remote control impossible.",
         },
         {
           title: "Human-Machine Teaming",
           description:
-            "Interfaces and protocols that let human operators and autonomous systems work together naturally. The machine extends capability — the human provides judgment.",
+            "Interfaces and protocols enabling natural collaboration between human operators and autonomous systems. The machine extends reach. The human provides direction.",
         },
       ]}
       tags={[

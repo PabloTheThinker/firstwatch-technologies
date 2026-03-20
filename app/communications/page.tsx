@@ -4,7 +4,7 @@ import DivisionPage from "../components/DivisionPage";
 export const metadata: Metadata = {
   title: "First Watch Communications — Infrastructure",
   description:
-    "Resilient communication systems that work when everything else fails. Connecting agents, machines, and people across any terrain, any condition.",
+    "Resilient communication infrastructure that maintains connectivity when centralized systems fail.",
 };
 
 export default function Communications() {
@@ -16,26 +16,27 @@ export default function Communications() {
       icon="📡"
       headline="Signal that survives"
       headlineAccent="when everything else fails."
-      description="Communication is the foundation every other system depends on. When networks go down — and they will — our systems keep agents, machines, and people connected across any terrain and any condition."
+      description="First Watch Communications builds resilient communication systems designed to maintain connectivity when centralized infrastructure is degraded, damaged, or destroyed."
       paragraphs={[
-        "Traditional communication infrastructure is fragile. A single point of failure — a downed tower, a severed cable, a jammed frequency — can isolate entire communities and disable the autonomous systems trying to help them.",
-        "We build communication systems that assume failure as a baseline. Mesh networks that self-heal, protocols that adapt to degraded conditions, and infrastructure that keeps operating when centralized systems collapse. Because the moments when communication matters most are exactly the moments it's hardest to maintain.",
+        "Traditional communication infrastructure relies on centralized points of failure. A downed tower, a severed cable, or a jammed frequency can isolate entire communities and disable the autonomous systems deployed to assist them.",
+        "Our systems assume failure as a baseline. Mesh networks that self-organize and self-heal. Protocols that adapt to low bandwidth, high latency, and intermittent connectivity. Infrastructure that strengthens under load rather than collapsing under it.",
+        "The moments when communication matters most — natural disasters, remote operations, contested environments — are exactly the moments when maintaining it is hardest. That constraint shapes every design decision we make.",
       ]}
       capabilities={[
         {
           title: "Mesh Networks",
           description:
-            "Self-organizing, self-healing communication networks with no single point of failure. Every node is a relay. The network gets stronger as it grows.",
+            "Self-organizing, self-healing communication networks with no single point of failure. Every node serves as a relay. The network grows more resilient as it scales.",
         },
         {
           title: "Resilient Signal",
           description:
-            "Communication protocols designed for degraded environments — low bandwidth, high latency, intermittent connectivity. Delivering critical data when perfect conditions don't exist.",
+            "Communication protocols engineered for degraded environments — low bandwidth, high latency, intermittent connectivity. Reliable delivery of critical data under imperfect conditions.",
         },
         {
           title: "Field Communications",
           description:
-            "Deployable communication infrastructure for disaster response, remote operations, and environments where existing networks are compromised or nonexistent.",
+            "Rapidly deployable communication infrastructure for disaster response, remote operations, and environments where existing networks are compromised or nonexistent.",
         },
       ]}
       tags={[

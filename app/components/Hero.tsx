@@ -61,7 +61,7 @@ export default function Hero() {
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          Building support systems for humanity through intelligent software and autonomous systems.
+          Intelligent software. Autonomous systems. Resilient infrastructure.
         </p>
         <div
           className={`mt-10 flex items-center justify-center gap-5 transition-all duration-1000 delay-500 ${

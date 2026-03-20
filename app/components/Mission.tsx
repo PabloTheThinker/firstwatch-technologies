@@ -53,10 +53,9 @@ export default function Mission() {
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            We develop intelligent software, autonomous systems, and resilient communication
-            infrastructure — expanding what people can do, reach, and protect. From AI platforms
-            that bring clarity to complex decisions, to autonomous robotics for disaster response
-            and space exploration.
+            First Watch Technologies develops intelligent software, autonomous systems, and
+            resilient communication infrastructure. Our work spans four divisions — each focused
+            on expanding what people can do, reach, and protect.
           </p>
         </div>
       </div>

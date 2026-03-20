@@ -21,12 +21,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "First Watch Technologies",
   description:
-    "Building support systems for humanity through intelligent software and autonomous systems.",
+    "Intelligent software, autonomous systems, and resilient infrastructure. Four divisions building support systems for humanity.",
   metadataBase: new URL("https://firstwatchtechnologies.com"),
   openGraph: {
     title: "First Watch Technologies",
     description:
-      "Building support systems for humanity through intelligent software and autonomous systems.",
+      "Intelligent software, autonomous systems, and resilient infrastructure. Four divisions building support systems for humanity.",
     type: "website",
   },
 };
